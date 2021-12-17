@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Interaction</title>
+</head>
+<body>
+    <form method="get">
+        <h1>Form Interaction</h1>
+        <label for="name">Name:<input type="text" id="game"></label>
+        <input type="submit" value = "Submit">
+    </form>
+    <script>    
+    
+        var form = document.querySelector('form');
+        var game = document.getElementById('game');
+
+        form.addEventListener('submit', function(evt){
+            evt.preventDefault();
+            alert('Hello ' + game.value);
+        });
+
+    </script>
+</body>
+</html>

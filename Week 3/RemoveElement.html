@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="">
+    <h1 id="jojo">HELLO JOJO</h1>
+    <h1>Delete these</h1>
+    <ul id="contents">
+        <li>One</li>
+        <li>two</li>
+        <li>Three</li>
+    </ul>
+    <button>click to delete one by one</button>
+</body>
+
+<script>
+    var bits = document.getElementById('contents');
+    console.log(bits.length)
+    var but = document.querySelector('button');
+    function del() {
+        bits.removeChild(bits.firstChild);
+    }
+    but.addEventListener('click', del);
+</script>
+</html>

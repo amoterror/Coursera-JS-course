@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Increment - Decrement</title>
+</head>
+<body>
+    <script>
+        var hNum = 0;
+        var body = document.body;
+        var head = document.createElement('h1');
+        head.style.color = 'green';
+        var num = document.createElement('p');
+        var numTxt = document.createTextNode(hNum);
+        num.appendChild(numTxt);
+        var hTxt = document.createTextNode(`The number of user is :-` + num);
+        head.appendChild(hTxt);
+        
+        var incro = () => {
+            
+            hNum++;
+            num.appendChild(numTxt);
+            console.log(hNum);
+        }
+        var incbtn = document.createElement('button');
+        var inctxt = document.createTextNode('Increase 1 user');
+        incbtn.appendChild(inctxt);
+        incbtn.addEventListener('click' , incro);
+        
+        body.appendChild(head);
+        body.appendChild(incbtn);
+        body.appendChild(num);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turn para green</title>
+</head>
+<body>
+
+    <p>Click to turn para green</p>
+    <p>Hallo Jojo</p>
+    <p>fuck you motherfucker</p>
+    <button>xo</button>
+
+    <script>
+        var btn = document.createElement("BUTTON");
+        btn.innerHTML  = 'fuck you';
+        var para = document.querySelectorAll('p');
+        var but = document.querySelector('button');
+        var rangBadlo = () => {
+            
+            for (let i = 0 ; i < para.length ; i++) {
+                para[i].style.color = 'green';
+            }
+        }
+        but.addEventListener('click', rangBadlo);
+    </script>
+
+        </body>
+</html>

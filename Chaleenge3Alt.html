@@ -1,0 +1,18 @@
+<body>
+    num = 
+    <span id="num"></span>
+    <br>
+    <button onClick={increment()}>
+        INC 
+    </button>
+    <script>
+        let num = 0
+        document.getElementById('num').innerHTML = num
+        const  increment = () => {
+            num++
+            document.getElementById('num').innerHTML = num
+            console.log(num);
+        }
+    </script>
+</body>
+</html>

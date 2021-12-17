@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A new text</title>
+</head>
+<body>
+
+    <div id="pAdd">
+
+    </div>
+    <button>Press to add para</button>
+
+    <script>
+        
+        var btn = document.querySelector("button");
+        var pDiv = document.getElementById('pAdd');
+        var nP = document.createElement('p');
+        var newPara = () => {
+            var nP = document.createElement('p');
+            var txt = document.createTextNode('A new Paragraph');
+            var Deletable = document.querySelectorAll('p');
+            nP.appendChild(txt);
+            pDiv.appendChild(nP);
+            console.log(Deletable.length)
+        }
+        btn.addEventListener('click' , newPara);
+        var del = document.createElement('button');
+        var dbtntxt = document.createTextNode('Delete A Para');
+        pDiv.appendChild(del);
+        del.appendChild(dbtntxt);
+        var delFunc = () => {
+            var Deletable = document.querySelectorAll('p');
+            while(Deletable.length > 0) {
+
+                pDiv.removeChild(pDiv.children[Deletable.length-1]);            
+            
+            }
+        }
+        del.addEventListener('click' , delFunc);
+        
+    </script>
+
+</body>
+</html>

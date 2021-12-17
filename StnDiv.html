@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var students = [];
+
+    for (let i = 171 ; i <= 255 ; i++)  {
+        students.push(i);
+    }
+
+    console.log(students)
+
+    var grp = [];
+
+    for(let i =0 ; i <=80 ; i++ ) {
+        var koch = students.splice(0,5);
+        grp.push(koch)
+    }
+
+    console.log(grp)
+
+    var divs = [];
+    var div1 = [];
+    var div2 = [];
+    var div3 = [];
+    var div4 = [];
+    var div5 = [];
+
+    /*for(let i = 0 ; i <= grp.length ; i++) {
+        for(let j = 0 ; j <= grp[i].length ; j++) {
+            switch(j) {
+                case 0 : 
+                    div1.push(grp[i][j])
+                    break;
+                case 1 :
+                    div2.push(grp[i][j])
+                    break;
+                case 2 : 
+                    div3.push(grp[i][j])
+                    break;
+                case 3 : 
+                    div4.push(grp[i][j])
+                    break;
+                case 4:
+                    div5.push(grp[i][j])
+                    break;
+                default:
+                    console.log('Fuck You Kyle');
+                    break;
+            } 
+
+        }
+    }
+    */ //This 👆 doesn't work
+    
+    //This 👇 does , Thanks to Krishna
+   grp.map((data,index)=>{
+    data.map((data2 , index2) => {
+        console.log(data2)
+        switch(index2) {
+            case 0: 
+                div1.push(grp[index][index2]);
+                break;
+            case 1:
+                div2.push(grp[index][index2])
+                break;
+            case 2:
+                div3.push(grp[index][index2])
+                break;
+            case 3:
+                div4.push(grp[index][index2])
+                break;
+            case 4:
+                div5.push(grp[index][index2])
+                break;
+            default:
+                console.log('fuck you kyle');
+                break;
+        }
+    })
+   })
+
+   console.log(div1)
+   console.log(div2)
+   console.log(div3)
+   console.log(div4)
+   console.log(div5)
+
+   var body = document.body;
+   var head1 = document.createElement('h1');
+   var head2 = document.createElement('h1');
+   var head3 = document.createElement('h1');
+   var head4 = document.createElement('h1');
+   var head5 = document.createElement('h1');
+
+   body.appendChild(head1)
+   body.appendChild(head2)
+   body.appendChild(head3)
+   body.appendChild(head4)
+   body.appendChild(head5)
+   head1.innerHTML = `SET 1 </br> ${div1}`
+   head2.innerHTML = `SET 2 </br> ${div2}`
+   head3.innerHTML = `SET 3 </br> ${div3}`
+   head4.innerHTML = `SET 4 </br> ${div4}`
+   head5.innerHTML = `SET 5 </br> ${div5}`
+
+   head1.style.color = 'green'
+   head2.style.color = 'orange'
+   head3.style.color = 'blue'
+   head4.style.color = 'green'
+   head5.style.color = 'orange'
+    </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A new text</title>
+</head>
+<body>
+
+
+
+    <script>
+
+        var div = document.createElement('div');
+        var p = document.createElement('p');
+        var btn = document.createElement('button');
+        var txt = document.createTextNode('Press to add a button');
+
+        btn.appendChild(txt);
+        div.appendChild(btn);
+        document.body.appendChild(div);
+        document.body.appendChild(p);
+
+        var txtCrt = () => {
+
+            var pTxt = document.createTextNode(' A new paragraph');
+            p.appendChild(pTxt);
+ 
+        }
+
+
+        btn.addEventListener('click' , txtCrt);
+
+    </script>
+
+</body>
+</html>

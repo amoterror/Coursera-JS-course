@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Basic Challenges:Challenge 9</title>
+</head>
+<body>
+
+    <h1>JavaScript Basic Challenges:Challenge 9</h1>
+
+    <script>
+        var col = prompt('Choose a color','Ex : Red') 
+        switch(col) {
+            case 'red':
+            case 'blue':
+            case 'yellow':
+                console.log(`It's a primary color : ${col}`);
+                break;
+            case 'orange':
+            case 'green':
+            case 'purple':
+                console.log(`It's a secondary color : ${col}`);
+                break;
+            default: console.log(`${col} doesn't sattisfy the criteria`);
+                break;
+        }
+    </script>
+</body>
+</html>

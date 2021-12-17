@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testing Selecions!</title>
+</head>
+<body>
+    <h1 style="color:red; font-size:100px;">Testing Selections</h1>
+    <script>
+        var red = true;
+        var blue = false;
+        var colarr = ['red' , 'blue' , 'green'];
+        var selColo = colarr[1];
+        /* if(blue) {
+            // something happens
+            console.log("The statement is true.")
+        } 
+        else {
+            console.log("The statement is false.")
+        } */    
+        switch(selColo) {
+            case 'red' : console.log("It's red");
+            break;
+            case 'blue' : console.log("It's blue")
+            break;
+            case 'green' : console.log('It\'s green')
+            break;
+            default : console.log('No color selected');
+            break;
+        }
+    </script>
+</body>
+</html>

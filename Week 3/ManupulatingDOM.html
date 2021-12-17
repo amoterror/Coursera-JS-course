@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM manipulation</title>
+</head>
+<body>
+    <button ><input type="checkbox" value="done" id="butt">Hello</button>
+    <h1 id="end">Mother F*****</h1>
+    <h1>Piece de la S*IT</h1>
+    <script>
+        var butt = document.getElementById('butt');
+        var newEl = document.createElement('h1');
+        var text = document.createTextNode('Yo! It worked!!');
+        if(butt.getAttribute('value') == 'done') {
+             newEl.appendChild(text);
+        }
+        
+    </script>
+
+</body>
+</html>
